@@ -1,0 +1,10 @@
+---
+title: Publications
+listing:
+  categories: numbered
+  type: table
+  fields: [title, Type, Publication, Year]
+  sort: "date"
+  
+---
+

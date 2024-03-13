@@ -1,0 +1,23 @@
+---
+title: "Climate risk perceptions and perceived yield loss increases agricultural technology adoption in the polder areas of Bangladesh"
+Type: "Article"
+author: "Zobaer Ahmed, Aaron M. Shew, Manoranjan K. Mondal, Sudhir Yadav, S.V.Krishna Jagadish, P.V.Vara Prasad, Marie-Charlotte Buisson, Mahanambrota Das, Mustafa Bakuluzzaman"
+Year: "2022"
+Publication: "Journal of Rural Studies"
+doi: "https://doi.org/10.1016/j.jrurstud.2022.06.008"
+toc: false
+categories:
+  - Sustainable Intensification 
+  - Agricultural risk
+  - Climate change impacts
+  - Coastal Bangladesh
+  - Agrarian adaptation
+---
+
+## Citation (APA 7)
+
+> Ahmed, Z., Shew, A. M., Mondal, M. K., Yadav, S., Jagadish, S., Prasad, P., Buisson, M. C., Das, M., & Bakuluzzaman, M. (2022). Climate risk perceptions and perceived yield loss increases agricultural technology adoption in the polder areas of Bangladesh. *Journal of Rural Studies*, 94, 274–286.
+
+## Abstract
+
+The effects of climate change are likely to increase the frequency of flood, drought, and salinity events in the coastal areas of Bangladesh, posing many challenges for agrarian communities. Sustainable intensification in the form of improved agricultural management practices and new technologies may help farmers cope with stress and adapt to changing conditions. In this study, we explore how climate change perceptions of agricultural risk affect adaptation to climate change through technology adoption in a unique landscape: the polders of Bangladesh. In 2016, a survey was conducted in 1003 households living on these artificial, leveed islands facing the Bay of Bengal. We analyzed the responses from polder residents to construct a climate risk index which quantifies climate risk perception in this highly vulnerable agrarian landscape. We analyzed how polder demographics influence their perceptions about climatic change using seemingly unrelated regression (SUR). Further, by using three bivariate probit regression models, we estimated how the perception of climate risk drives the differential adoption of new agricultural technologies. Our findings show that farmers perceive polder agriculture as highly vulnerable to four environmental change factors: flooding, drought, salinity, and pest infestation. The SUR model suggests that farmer demographics, community group memberships, and access to different inputs and services strongly influence climatic risk perceptions. Findings also suggest that polder farmers with higher risk perceptions have a higher propensity to adopt both chemical and mechanical adaptation strategies. Cost, however, limits the ability of farmers to adopt improved technologies, suggesting an opportunity for institution-led approaches.

@@ -110,5 +110,96 @@
     "title": "Learning Collection",
     "section": "Complex Collapsible Trees Example",
     "text": "Complex Collapsible Trees Example\n\nI have generated a complex collaborative tree utilizing my proprietary datasets, which unfortunately cannot be shared publicly. However, I would like to provide you with a snapshot of the expanded tree above.\nIf you wish to recreate similar results using your own datasets, follow the steps outlined in the earlier parts of this tutorial. Remember, the process involves importing data into R, cleaning it up, and finally rendering the tree using the `collapsibleTree()` function from the `collapsibleTree` package. Good luck, and feel free to reach out if you encounter any issues during implementation!\nEnjoyed the tutorial? Consider fueling my efforts with a coffee!\n\nReferences: This tutorial is based on the documentation provided by Adeel Khan on his https://adeelk93.github.io/collapsibleTree/"
+  },
+  {
+    "objectID": "publications/publication1.html",
+    "href": "publications/publication1.html",
+    "title": "Winter-time cover crop identification: A remote sensing-based methodological framework for new and rapid data generation",
+    "section": "",
+    "text": "Ahmed, Z., Nalley, L., Brye, K., Steven Green, V., Popp, M., Shew, A. M., & Connor, L. (2023). Winter-time cover crop identification: A remote sensing-based methodological framework for new and rapid data generation. International Journal of Applied Earth Observation and Geoinformation, 125, 103564."
+  },
+  {
+    "objectID": "publications/publication1.html#citation-apa-7",
+    "href": "publications/publication1.html#citation-apa-7",
+    "title": "Winter-time cover crop identification: A remote sensing-based methodological framework for new and rapid data generation",
+    "section": "",
+    "text": "Ahmed, Z., Nalley, L., Brye, K., Steven Green, V., Popp, M., Shew, A. M., & Connor, L. (2023). Winter-time cover crop identification: A remote sensing-based methodological framework for new and rapid data generation. International Journal of Applied Earth Observation and Geoinformation, 125, 103564."
+  },
+  {
+    "objectID": "publications/publication1.html#abstract",
+    "href": "publications/publication1.html#abstract",
+    "title": "Winter-time cover crop identification: A remote sensing-based methodological framework for new and rapid data generation",
+    "section": "Abstract",
+    "text": "Abstract\nAccurately identifying and systematically mapping winter-time cover crops and their phenological characteristics offer significant benefits to agricultural producers and policymakers, as cover crops are one of several potential solutions to climate change mitigation. We present a methodological framework for identifying and mapping the presence of winter-time cover crops at the field level and aggregated to county scales from 2013 to 2019 by using the Google Earth Engine (GEE), a random forest classifier with time series data from Landsat 8, and yearly cover crop training data from the United States Department of Agriculture (USDA)-Natural Resources Conservation Service (NRCS). The methodology was tested with data from the Mississippi Alluvial Plain (MAP) region. Despite the inter-annual agronomic and climatic variations across space, results demonstrated an overall mean classification accuracy of 97.7%, with a kappa coefficient of 0.94. Results also revealed a 34% increase in model-predicted cover crop adoption in the study region from 2013 to 2019. Based on GEE, this study created, for the first time, a 30-m spatial and temporal resolution binary annual datasets and then aggregated them at the county level within the MAP study region. This multi-year novel dataset may improve our ability to anticipate and quantify the impact of summer crop production gains owing to cover crop adoption for extended periods and evaluate the adoption of cover crops on local soil ecosystems, biogeochemical cycles, and services. The methodology developed and tested broadly applies to other regions where cover crops have been promoted for climate-change mitigation and improving soil health for long-term sustainability. Agricultural producers, policymakers, and cost-share providers may use this information to develop agricultural conservation methods and land-use policies that minimize soil erosion and help mitigate climate change effects in the long run."
+  },
+  {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nType\n\n\nPublication\n\n\nYear\n\n\n\n\n\n\nWinter-time cover crop identification: A remote sensing-based methodological framework for new and rapid data generation\n\n\nArticle\n\n\nInternational Journal of Applied Earth Observation and Geoinformation\n\n\n2023\n\n\n\n\nAn examination of thematic research, development, and trends in remote sensing applied to conservation agriculture\n\n\nArticle\n\n\nInternational Soil and Water Conservation Research\n\n\n2024\n\n\n\n\nClimate risk perceptions and perceived yield loss increases agricultural technology adoption in the polder areas of Bangladesh\n\n\nArticle\n\n\nJournal of Rural Studies\n\n\n2022\n\n\n\n\nClimate change risk perceptions and agricultural adaptation strategies in vulnerable riverine char islands of Bangladesh\n\n\nArticle\n\n\nLand Use Policy\n\n\n2021\n\n\n\n\nAgriculture in Riverine Chars: Vulnerabilities to Climate Change and Community-Based Adaptation\n\n\nBook Chapter\n\n\nSpringer Geography\n\n\n2021\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/publication2.html",
+    "href": "publications/publication2.html",
+    "title": "In the eye of the beholder: A comprehensive analysis of stimulus type, perceiver, and target in physical attractiveness perceptions",
+    "section": "",
+    "text": "Bowdring, M. A., Sayette, M. A., Girard, J. M., & Woods, W. C. (2021). In the eye of the beholder: A comprehensive analysis of stimulus type, perceiver, and target in physical attractiveness perceptions. Journal of Nonverbal Behavior, 45(2), 241–259."
+  },
+  {
+    "objectID": "publications/publication2.html#citation-apa-7",
+    "href": "publications/publication2.html#citation-apa-7",
+    "title": "In the eye of the beholder: A comprehensive analysis of stimulus type, perceiver, and target in physical attractiveness perceptions",
+    "section": "",
+    "text": "Bowdring, M. A., Sayette, M. A., Girard, J. M., & Woods, W. C. (2021). In the eye of the beholder: A comprehensive analysis of stimulus type, perceiver, and target in physical attractiveness perceptions. Journal of Nonverbal Behavior, 45(2), 241–259."
+  },
+  {
+    "objectID": "publications/publication2.html#abstract",
+    "href": "publications/publication2.html#abstract",
+    "title": "In the eye of the beholder: A comprehensive analysis of stimulus type, perceiver, and target in physical attractiveness perceptions",
+    "section": "Abstract",
+    "text": "Abstract\nPhysical attractiveness plays a central role in psychosocial experiences. One of the top research priorities has been to identify factors affecting perceptions of physical attractiveness (PPA). Recent work suggests PPA derives from different sources (e.g., target, perceiver, stimulus type). Although smiles in particular are believed to enhance PPA, support has been surprisingly limited. This study comprehensively examines the effect of smiles on PPA and, more broadly, evaluates the roles of target, perceiver, and stimulus type in PPA variation. Perceivers (n=181) rated both static images and 5-s videos of targets displaying smiling and neutral-expressions. Smiling images were rated as more attractive than neutral-expression images (regardless of stimulus motion format). Interestingly, perceptions of physical attractiveness were based more on the perceiver than on either the target or format in which the target was presented. Results clarify the effect of smiles, and highlight the significant role of the perceiver, in PPA."
+  },
+  {
+    "objectID": "publications/publication5.html",
+    "href": "publications/publication5.html",
+    "title": "Agriculture in Riverine Chars: Vulnerabilities to Climate Change and Community-Based Adaptation",
+    "section": "",
+    "text": "Ahmed, Z., Lotze-Campen, H., & Kabir, M. H. (2021). Agriculture in Riverine Chars: Vulnerabilities to Climate Change and Community-Based Adaptation. Springer Geography, 275–289."
+  },
+  {
+    "objectID": "publications/publication5.html#citation-apa-7",
+    "href": "publications/publication5.html#citation-apa-7",
+    "title": "Agriculture in Riverine Chars: Vulnerabilities to Climate Change and Community-Based Adaptation",
+    "section": "",
+    "text": "Ahmed, Z., Lotze-Campen, H., & Kabir, M. H. (2021). Agriculture in Riverine Chars: Vulnerabilities to Climate Change and Community-Based Adaptation. Springer Geography, 275–289."
+  },
+  {
+    "objectID": "publications/publication5.html#abstract",
+    "href": "publications/publication5.html#abstract",
+    "title": "Agriculture in Riverine Chars: Vulnerabilities to Climate Change and Community-Based Adaptation",
+    "section": "Abstract",
+    "text": "Abstract\nThis study explores char dwellers’ vulnerabilities and responses to climate change and other natural disasters and the existing community-based agricultural adaptations. Both quantitative and qualitative data have been used from a study carried out in Raydas Bari Char in Gaibandha District. Using SENTINEL 2 and LANDSAT 8 satellite imageries, annual flood vulnerability map and drainage patterns based on topography have been produced. The historical monthly mean temperature and rainfall graphs were also produced to showcase local hazards and vulnerabilities. The study findings show that char agriculture is highly vulnerable particularly to frequent flooding, continuous erosion, and seasonal drought. The study further reveals that char farmers adopted several community-based adaptation strategies in agriculture such as introducing new disaster tolerant crop varieties, water intensive irrigation system, changing planting times, and cultivating short duration varieties. A holistic developmental approach, including enhancing access to finance, capacity building, effective community governance and targeted policies, are needed to enhance local adaptations and building resilience to reduce vulnerabilities to natural hazards in char agriculture."
+  },
+  {
+    "objectID": "publications/publication3.html",
+    "href": "publications/publication3.html",
+    "title": "Climate risk perceptions and perceived yield loss increases agricultural technology adoption in the polder areas of Bangladesh",
+    "section": "",
+    "text": "Ahmed, Z., Shew, A. M., Mondal, M. K., Yadav, S., Jagadish, S., Prasad, P., Buisson, M. C., Das, M., & Bakuluzzaman, M. (2022). Climate risk perceptions and perceived yield loss increases agricultural technology adoption in the polder areas of Bangladesh. Journal of Rural Studies, 94, 274–286."
+  },
+  {
+    "objectID": "publications/publication3.html#citation-apa-7",
+    "href": "publications/publication3.html#citation-apa-7",
+    "title": "Climate risk perceptions and perceived yield loss increases agricultural technology adoption in the polder areas of Bangladesh",
+    "section": "",
+    "text": "Ahmed, Z., Shew, A. M., Mondal, M. K., Yadav, S., Jagadish, S., Prasad, P., Buisson, M. C., Das, M., & Bakuluzzaman, M. (2022). Climate risk perceptions and perceived yield loss increases agricultural technology adoption in the polder areas of Bangladesh. Journal of Rural Studies, 94, 274–286."
+  },
+  {
+    "objectID": "publications/publication3.html#abstract",
+    "href": "publications/publication3.html#abstract",
+    "title": "Climate risk perceptions and perceived yield loss increases agricultural technology adoption in the polder areas of Bangladesh",
+    "section": "Abstract",
+    "text": "Abstract\nThe effects of climate change are likely to increase the frequency of flood, drought, and salinity events in the coastal areas of Bangladesh, posing many challenges for agrarian communities. Sustainable intensification in the form of improved agricultural management practices and new technologies may help farmers cope with stress and adapt to changing conditions. In this study, we explore how climate change perceptions of agricultural risk affect adaptation to climate change through technology adoption in a unique landscape: the polders of Bangladesh. In 2016, a survey was conducted in 1003 households living on these artificial, leveed islands facing the Bay of Bengal. We analyzed the responses from polder residents to construct a climate risk index which quantifies climate risk perception in this highly vulnerable agrarian landscape. We analyzed how polder demographics influence their perceptions about climatic change using seemingly unrelated regression (SUR). Further, by using three bivariate probit regression models, we estimated how the perception of climate risk drives the differential adoption of new agricultural technologies. Our findings show that farmers perceive polder agriculture as highly vulnerable to four environmental change factors: flooding, drought, salinity, and pest infestation. The SUR model suggests that farmer demographics, community group memberships, and access to different inputs and services strongly influence climatic risk perceptions. Findings also suggest that polder farmers with higher risk perceptions have a higher propensity to adopt both chemical and mechanical adaptation strategies. Cost, however, limits the ability of farmers to adopt improved technologies, suggesting an opportunity for institution-led approaches."
   }
 ]

@@ -1,0 +1,25 @@
+---
+title: "Winter-time cover crop identification: A remote sensing-based methodological framework for new and rapid data generation"
+Type: "Article"
+author: "Zobaer Ahmed, Lawton Nalley, Kristofor Brye, V. Steven Green, Michael Popp, Aaron M. Shew, Lawson Connor"
+Year: "2023"
+Publication: "International Journal of Applied Earth Observation and Geoinformation"
+doi: "https://doi.org/10.1016/j.jag.2023.103564"
+toc: false
+categories:
+  - Winter-time cover crops
+  - Remote sensing
+  - Methodological framework
+  - Random Forest classifier
+  - Google Earth Engine
+  - Landsat
+  
+---
+
+## Citation (APA 7)
+
+> Ahmed, Z., Nalley, L., Brye, K., Steven Green, V., Popp, M., Shew, A. M., & Connor, L. (2023). Winter-time cover crop identification: A remote sensing-based methodological framework for new and rapid data generation. *International Journal of Applied Earth Observation and Geoinformation*, 125, 103564.
+
+## Abstract
+
+Accurately identifying and systematically mapping winter-time cover crops and their phenological characteristics offer significant benefits to agricultural producers and policymakers, as cover crops are one of several potential solutions to climate change mitigation. We present a methodological framework for identifying and mapping the presence of winter-time cover crops at the field level and aggregated to county scales from 2013 to 2019 by using the Google Earth Engine (GEE), a random forest classifier with time series data from Landsat 8, and yearly cover crop training data from the United States Department of Agriculture (USDA)-Natural Resources Conservation Service (NRCS). The methodology was tested with data from the Mississippi Alluvial Plain (MAP) region. Despite the inter-annual agronomic and climatic variations across space, results demonstrated an overall mean classification accuracy of 97.7%, with a kappa coefficient of 0.94. Results also revealed a 34% increase in model-predicted cover crop adoption in the study region from 2013 to 2019. Based on GEE, this study created, for the first time, a 30-m spatial and temporal resolution binary annual datasets and then aggregated them at the county level within the MAP study region. This multi-year novel dataset may improve our ability to anticipate and quantify the impact of summer crop production gains owing to cover crop adoption for extended periods and evaluate the adoption of cover crops on local soil ecosystems, biogeochemical cycles, and services. The methodology developed and tested broadly applies to other regions where cover crops have been promoted for climate-change mitigation and improving soil health for long-term sustainability. Agricultural producers, policymakers, and cost-share providers may use this information to develop agricultural conservation methods and land-use policies that minimize soil erosion and help mitigate climate change effects in the long run.

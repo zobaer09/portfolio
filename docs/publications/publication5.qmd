@@ -1,0 +1,23 @@
+---
+title: "Agriculture in Riverine Chars: Vulnerabilities to Climate Change and Community-Based Adaptation"
+type: "book chapter"
+author: "Zobaer Ahmed, Hermann Lotze-Campen and Md. Humayun Kabir"
+year: "2021"
+publication: "Land Use Policy"
+doi: "https://doi.org/10.1007/978-3-030-73592-0_16"
+toc: false
+categories:
+  - Natural hazards
+  - Vulnerability
+  - Charland agriculture
+  - Resilience
+  - Community-based adaptation
+---
+
+## Citation (APA 7)
+
+> Ahmed, Z., Lotze-Campen, H., & Kabir, M. H. (2021). Agriculture in Riverine Chars: Vulnerabilities to Climate Change and Community-Based Adaptation. *Springer Geography*, 275–289.
+
+## Abstract
+
+This study explores char dwellers’ vulnerabilities and responses to climate change and other natural disasters and the existing community-based agricultural adaptations. Both quantitative and qualitative data have been used from a study carried out in Raydas Bari Char in Gaibandha District. Using SENTINEL 2 and LANDSAT 8 satellite imageries, annual flood vulnerability map and drainage patterns based on topography have been produced. The historical monthly mean temperature and rainfall graphs were also produced to showcase local hazards and vulnerabilities. The study findings show that char agriculture is highly vulnerable particularly to frequent flooding, continuous erosion, and seasonal drought. The study further reveals that char farmers adopted several community-based adaptation strategies in agriculture such as introducing new disaster tolerant crop varieties, water intensive irrigation system, changing planting times, and cultivating short duration varieties. A holistic developmental approach, including enhancing access to finance, capacity building, effective community governance and targeted policies, are needed to enhance local adaptations and building resilience to reduce vulnerabilities to natural hazards in char agriculture.
