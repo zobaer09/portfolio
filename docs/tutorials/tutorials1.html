@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Research, Analysis, and Visual Portfolio - Learning Collection</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../site_libs/d3-4.10.2/d3.min.js"></script>
+<link href="../site_libs/collapsibleTree-0.1.6/collapsibleTree.css" rel="stylesheet">
+<script src="../site_libs/collapsibleTree-binding-0.1.8/collapsibleTree.js"></script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Research, Analysis, and Visual Portfolio</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../tutorials/"> 
+<span class="menu-text">Tutorials</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#getting-started-with-collapsible-trees-using-r-a-simple-tutorial" id="toc-getting-started-with-collapsible-trees-using-r-a-simple-tutorial" class="nav-link active" data-scroll-target="#getting-started-with-collapsible-trees-using-r-a-simple-tutorial">Getting Started with Collapsible Trees using R: A Simple Tutorial</a></li>
+  <li><a href="#complex-collapsible-trees-example" id="toc-complex-collapsible-trees-example" class="nav-link" data-scroll-target="#complex-collapsible-trees-example">Complex Collapsible Trees Example</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Learning Collection</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="getting-started-with-collapsible-trees-using-r-a-simple-tutorial" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-with-collapsible-trees-using-r-a-simple-tutorial">Getting Started with Collapsible Trees using R: A Simple Tutorial</h2>
+<p>In this tutorial, we will explore how to generate collapsible trees with the collapsibleTree package in R. Let’s begin by installing and loading the required packages if you haven’t already. You may need to modify the installation paths based on your system configuration.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install necessary packages (if not installed):</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("collapsibleTree")</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("readxl")</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("dplyr")</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("colorspace")</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Load libraries</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(collapsibleTree)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(colorspace)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now let’s load our dataset containing geographical information. In this example, we use an Excel file named ‘Geography Table_Data.World.xlsx’ downloaded from (https://data.world/glx/geography-table). Adjust the path accordingly for your local files.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read data from Excel file</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Geography <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(<span class="st">"C:/Users/Zobaer Ahmed/Documents/Zobaer_github_page/portfolio/data/Geography Table_Data.World.xlsx"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Display summary of loaded data (if needed delete the "#" sign)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(Geography)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Next, we will display a collapsible tree representing the hierarchical structure of continents, types, and countries using the collapsibleTree() function. <code>Click any node and see the magic</code>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-ac6c962de713b387e22f" style="width:100%;height:390px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ac6c962de713b387e22f">{"x":{"data":{"name":"Geography","children":[{"name":"Europe","children":[{"name":"Partially Recognised State","children":[{"name":"Abkhazia"},{"name":"Kosovo"},{"name":"South Ossetia"}]},{"name":"Region","children":[{"name":"Ajaria"}]},{"name":"Part of a Larger Island","children":[{"name":"Akrotiri and Dhekelia"}]},{"name":"Archipelago","children":[{"name":"Aland Islands"},{"name":"Faroe Islands"},{"name":"Svalbard and Jan Mayen Islands"}]},{"name":"Country","children":[{"name":"Albania"},{"name":"Andorra"},{"name":"Austria"},{"name":"Belarus"},{"name":"Belgium"},{"name":"Bosnia and Herzegovina"},{"name":"Bulgaria"},{"name":"Croatia"},{"name":"Czech Republic"},{"name":"Denmark"},{"name":"Estonia"},{"name":"Finland"},{"name":"France"},{"name":"Germany"},{"name":"Greece"},{"name":"Hungary"},{"name":"Italy"},{"name":"Latvia"},{"name":"Liechtenstein"},{"name":"Lithuania"},{"name":"Luxembourg"},{"name":"Macedonia, The former Yugoslav Republic of"},{"name":"Moldova"},{"name":"Monaco"},{"name":"Montenegro"},{"name":"Netherlands, The"},{"name":"Norway"},{"name":"Poland"},{"name":"Portugal"},{"name":"Romania"},{"name":"San Marino"},{"name":"Serbia"},{"name":"Slovakia"},{"name":"Slovenia"},{"name":"Spain"},{"name":"Sweden"},{"name":"Switzerland"},{"name":"Ukraine"}]},{"name":"One Island","children":[{"name":"Alderney"},{"name":"Jersey"},{"name":"Sark"}]},{"name":"Island Nation","children":[{"name":"Azores"},{"name":"Madeira"}]},{"name":"Community","children":[{"name":"Basque Country"}]},{"name":"Country - Part of a Larger Island","children":[{"name":"Cyprus, The Republic of"}]},{"name":"Territory","children":[{"name":"Diego Garcia"},{"name":"Gibraltar"}]},{"name":"Constituent Country","children":[{"name":"England"},{"name":"Northern Ireland"},{"name":"Scotland"},{"name":"Wales"}]},{"name":"One Main Island","children":[{"name":"Guernsey"},{"name":"Isle of Man"}]},{"name":"Country - One Main Island","children":[{"name":"Iceland"}]},{"name":"Country - Part of One Main Island","children":[{"name":"Ireland, Republic of"}]},{"name":"Country - Two Main Islands","children":[{"name":"Malta"}]},{"name":"Self-Declared State - Part of a Larger Island","children":[{"name":"Northern Cyprus"}]},{"name":"Country - One Main Island; Part of a Second Island","children":[{"name":"United Kingdom"}]},{"name":"Walled Enclave","children":[{"name":"Vatican City (Holy See)"}]}]},{"name":"Asia","children":[{"name":"Country","children":[{"name":"Afghanistan"},{"name":"Armenia"},{"name":"Azerbaijan"},{"name":"Bangladesh"},{"name":"Bhutan"},{"name":"Cambodia"},{"name":"China"},{"name":"Georgia"},{"name":"India"},{"name":"Iran, Islamic Republic of"},{"name":"Iraq"},{"name":"Israel"},{"name":"Jordan"},{"name":"Kazakhstan"},{"name":"Kuwait"},{"name":"Kyrgyzstan"},{"name":"Laos, Lao People's Democratic Republic"},{"name":"Lebanon"},{"name":"Malaysia"},{"name":"Mongolia"},{"name":"Myanmar - Burma"},{"name":"Nepal"},{"name":"North Korea, Democratic People's Republic of Korea"},{"name":"Oman"},{"name":"Pakistan"},{"name":"Qatar"},{"name":"Russia"},{"name":"Saudi Arabia"},{"name":"South Korea, Republic of Korea"},{"name":"Syria, The Syrian Arab Republic"},{"name":"Tajikistan"},{"name":"Thailand"},{"name":"Turkey"},{"name":"Turkmenistan"},{"name":"United Arab Emirates"},{"name":"Uzbekistan"},{"name":"Vietnam"},{"name":"Yemen"}]},{"name":"Country - One Main Island","children":[{"name":"Bahrain"},{"name":"Singapore"},{"name":"Sri Lanka"}]},{"name":"Archipelago","children":[{"name":"British Indian Ocean Territory"}]},{"name":"Country - Part of a Larger Island","children":[{"name":"Brunei, Nation of"},{"name":"East Timor - Timor-Leste"}]},{"name":"One Main Island","children":[{"name":"Christmas Island"},{"name":"Taiwan"}]},{"name":"Two Main Islands","children":[{"name":"Cocos (Keeling) Islands"}]},{"name":"Territory","children":[{"name":"Gaza Strip"}]},{"name":"Autonomous Territory","children":[{"name":"Hong Kong"},{"name":"Macao - Macau"}]},{"name":"Country - Archipelago","children":[{"name":"Indonesia"},{"name":"Japan"},{"name":"Maldives"},{"name":"Philippines"}]},{"name":"Region","children":[{"name":"Palestine, State of"}]},{"name":"Island Nation","children":[{"name":"Paracel Islands"},{"name":"Spratly Islands"}]},{"name":"Landlocked Territory","children":[{"name":"West Bank"}]}]},{"name":"Africa","children":[{"name":"Country","children":[{"name":"Algeria"},{"name":"Angola"},{"name":"Benin"},{"name":"Botswana"},{"name":"Burkina Faso"},{"name":"Burundi"},{"name":"Cameroon"},{"name":"Central African Republic"},{"name":"Chad"},{"name":"Congo-Brazzaville, Republic of the Congo"},{"name":"Congo-Kinshasa, The Democratic Republic of the Congo"},{"name":"Cote d'Ivoire - Ivory Coast"},{"name":"Djibouti"},{"name":"Egypt"},{"name":"Equatorial Guinea"},{"name":"Eritrea"},{"name":"Ethiopia"},{"name":"Gabon"},{"name":"Gambia, The"},{"name":"Ghana"},{"name":"Guinea"},{"name":"Guinea-Bissau"},{"name":"Kenya"},{"name":"Lesotho"},{"name":"Liberia"},{"name":"Libya"},{"name":"Malawi"},{"name":"Mali"},{"name":"Mauritania"},{"name":"Morocco"},{"name":"Mozambique"},{"name":"Namibia"},{"name":"Niger"},{"name":"Nigeria"},{"name":"Rwanda"},{"name":"Senegal"},{"name":"Sierra Leone"},{"name":"Somalia"},{"name":"South Africa"},{"name":"South Sudan"},{"name":"Sudan"},{"name":"Swaziland"},{"name":"Tanzania, United Republic of"},{"name":"Togo"},{"name":"Tunisia"},{"name":"Uganda"},{"name":"Zambia"},{"name":"Zimbabwe"}]},{"name":"One Main Island","children":[{"name":"Ascension Island"},{"name":"Mayotte"},{"name":"Reunion"},{"name":"Saint Helena"},{"name":"Tristan da Cunha"}]},{"name":"Uninhabited Atoll","children":[{"name":"Bassas da India"},{"name":"Europa Island"}]},{"name":"Community","children":[{"name":"Canary Islands"}]},{"name":"Country - Archipelago","children":[{"name":"Cape Verde"},{"name":"Comoros"},{"name":"Mauritius"},{"name":"Seychelles"}]},{"name":"City","children":[{"name":"Ceuta"},{"name":"Melilla"}]},{"name":"Uninhabited Archipelago","children":[{"name":"Glorioso Islands"}]},{"name":"Uninhabited Island","children":[{"name":"Juan de Nova Island - Saint-Christophe"}]},{"name":"Country - One Main Island","children":[{"name":"Madagascar"}]},{"name":"Self-Declared State","children":[{"name":"Republic of Somaliland"}]},{"name":"Country - Two Main Islands","children":[{"name":"Sao Tome and Principe"}]},{"name":"One Island","children":[{"name":"Tromelin Island"}]},{"name":"Territory","children":[{"name":"Western Sahara"}]},{"name":"Archipelago","children":[{"name":"Zanzibar"}]}]},{"name":"Australia / Oceania","children":[{"name":"Archipelago","children":[{"name":"American Samoa"},{"name":"Cook Islands"},{"name":"French Polynesia"},{"name":"Northern Mariana Islands"},{"name":"Pitcairn Islands"},{"name":"Tokelau"},{"name":"Wallis and Futuna Islands"}]},{"name":"Territory","children":[{"name":"Ashmore and Cartier Islands"},{"name":"Baker Island"},{"name":"Chatham Islands"},{"name":"Coral Sea Islands"},{"name":"Heard and McDonald Islands"},{"name":"Howland Island"},{"name":"Jarvis Island"},{"name":"Johnston Atoll"},{"name":"Kingman Reef"},{"name":"Midway Islands"},{"name":"Wake Island"}]},{"name":"Country","children":[{"name":"Australia"}]},{"name":"Country - Archipelago","children":[{"name":"Fiji"},{"name":"Kiribati"},{"name":"Marshall Islands"},{"name":"Micronesia, Federated States of"},{"name":"Palau"},{"name":"Samoa"},{"name":"Solomon Islands"},{"name":"Tonga"},{"name":"Tuvalu"},{"name":"Vanuatu"}]},{"name":"One Island","children":[{"name":"Guam"},{"name":"Niue"}]},{"name":"Island Nation","children":[{"name":"Lord Howe Island"}]},{"name":"Country - One Island","children":[{"name":"Nauru"}]},{"name":"One Main Island","children":[{"name":"New Caledonia"},{"name":"Norfolk Island"}]},{"name":"Country - Two Main Islands","children":[{"name":"New Zealand"}]},{"name":"Uninhabited Atoll","children":[{"name":"Palmyra Atoll"}]},{"name":"Country - Part of a Larger Island","children":[{"name":"Papua New Guinea"}]}]},{"name":"North America","children":[{"name":"One Main Island","children":[{"name":"Anguilla"},{"name":"Guadeloupe"},{"name":"Montserrat"},{"name":"Navassa Island"},{"name":"Puerto Rico"},{"name":"Saint Barthelemy - St. Barts"}]},{"name":"Country - Two Main Islands","children":[{"name":"Antigua and Barbuda"},{"name":"Saint Kitts and Nevis"},{"name":"Trinidad and Tobago"}]},{"name":"Constituent Country - One Island","children":[{"name":"Aruba"}]},{"name":"Country - Archipelago","children":[{"name":"Bahamas, The"},{"name":"Saint Vincent and the Grenadines"}]},{"name":"Country - One Island","children":[{"name":"Barbados"}]},{"name":"Country","children":[{"name":"Belize"},{"name":"Canada"},{"name":"Costa Rica"},{"name":"El Salvador"},{"name":"Guatemala"},{"name":"Honduras"},{"name":"Mexico"},{"name":"Nicaragua"},{"name":"Panama"},{"name":"United States"}]},{"name":"Archipelago","children":[{"name":"Bermuda"},{"name":"British Virgin Islands"},{"name":"Turks and Caicos Islands"},{"name":"U.S. Virgin Islands"}]},{"name":"Island Municipality","children":[{"name":"Bonaire"},{"name":"Saba"},{"name":"Sint Eustatius"}]},{"name":"Three Islands","children":[{"name":"Cayman Islands"}]},{"name":"Uninhabited Atoll","children":[{"name":"Clipperton Island"}]},{"name":"Country - One Main Island","children":[{"name":"Cuba"},{"name":"Dominica"},{"name":"Grenada"},{"name":"Jamaica"},{"name":"Saint Lucia"}]},{"name":"Country - Part of a Larger Island","children":[{"name":"Dominican Republic"},{"name":"Haiti"}]},{"name":"One Major Island","children":[{"name":"Greenland"}]},{"name":"One Island","children":[{"name":"Martinique"}]},{"name":"Constituent Country - Part of a Larger Island","children":[{"name":"Saint Maarten (Dutch part)"}]},{"name":"Part of a Larger Island","children":[{"name":"Saint Martin (French part)"}]},{"name":"Island Nation","children":[{"name":"Saint Pierre and Miquelon"}]}]},{"name":"South America","children":[{"name":"Country","children":[{"name":"Argentina"},{"name":"Bolivia, Plurinational State of"},{"name":"Brazil"},{"name":"Chile"},{"name":"Colombia"},{"name":"Ecuador"},{"name":"Guyana"},{"name":"Paraguay"},{"name":"Peru"},{"name":"Suriname"},{"name":"Uruguay"},{"name":"Venezuela, Bolivarian Republic of"}]},{"name":"One Main Island","children":[{"name":"Curacao"}]},{"name":"One Island","children":[{"name":"Easter Island"}]},{"name":"Two Main Islands","children":[{"name":"Falkland Islands (Malvinas)"}]},{"name":"Region","children":[{"name":"French Guiana"}]}]},{"name":"Antarctica","children":[{"name":"Territory","children":[{"name":"Bouvet Island"},{"name":"British Antarctic Territory"}]},{"name":"Group of Islands","children":[{"name":"French Southern Territories - Antarctic Lands"}]},{"name":"Archipelago","children":[{"name":"South Georgia and the South Sandwich Islands"}]}]}]},"options":{"hierarchy":["continent","type","country"],"input":null,"attribute":"leafCount","linkLength":null,"fontSize":10,"tooltip":false,"collapsed":true,"zoomable":false,"margin":{"top":20,"bottom":20,"left":70,"right":285},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>To further customize the tree, we can calculate the number of countries per continent and type, then add these counts as attributes for each node. This allows us to view the count when expanding nodes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-8a9a1fbe587458c620be" style="width:100%;height:390px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8a9a1fbe587458c620be">{"x":{"data":{"name":"Geography","fill":"#D33F6A","WeightOfNode":"297","children":[{"name":"Africa","fill":"#D33F6A","WeightOfNode":"70","children":[{"name":"Country","fill":"#D33F6A","WeightOfNode":"48"},{"name":"One Main Island","fill":"#E9BD34","WeightOfNode":"5"},{"name":"Country - Archipelago","fill":"#E8C33C","WeightOfNode":"4"},{"name":"City","fill":"#E5D75D","WeightOfNode":"2"},{"name":"Uninhabited Atoll","fill":"#E5D75D","WeightOfNode":"2"},{"name":"Archipelago","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Community","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Country - One Main Island","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Country - Two Main Islands","fill":"#E3E37C","WeightOfNode":"1"},{"name":"One Island","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Self-Declared State","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Territory","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Uninhabited Archipelago","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Uninhabited Island","fill":"#E3E37C","WeightOfNode":"1"}]},{"name":"Europe","fill":"#D54865","WeightOfNode":"67","children":[{"name":"Country","fill":"#D33F6A","WeightOfNode":"38"},{"name":"Constituent Country","fill":"#E8C33C","WeightOfNode":"4"},{"name":"Archipelago","fill":"#E6D050","WeightOfNode":"3"},{"name":"One Island","fill":"#E6D050","WeightOfNode":"3"},{"name":"Partially Recognised State","fill":"#E6D050","WeightOfNode":"3"},{"name":"Island Nation","fill":"#E5D75D","WeightOfNode":"2"},{"name":"One Main Island","fill":"#E5D75D","WeightOfNode":"2"},{"name":"Territory","fill":"#E5D75D","WeightOfNode":"2"},{"name":"Community","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Country - One Main Island","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Country - One Main Island; Part of a Second Island","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Country - Part of One Main Island","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Country - Part of a Larger Island","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Country - Two Main Islands","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Part of a Larger Island","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Region","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Self-Declared State - Part of a Larger Island","fill":"#E3E37C","WeightOfNode":"1"},{"name":"Walled Enclave","fill":"#E3E37C","WeightOfNode":"1"}]},{"name":"Asia","fill":"#DD6157","WeightOfNode":"58","children":[{"name":"Country","fill":"#D33F6A","WeightOfNode":"38"},{"name":"Country - Archipelago","fill":"#E9BD34","WeightOfNode":"4"},{"name":"Country - One Main Island","fill":"#E7CA45","WeightOfNode":"3"},{"name":"Autonomous Territory","fill":"#E5D75D","WeightOfNode":"2"},{"name":"Country - Part of a Larger Island","fill":"#E5D75D","WeightOfNode":"2"},{"name":"Island Nation","fill":"#E5D75D","WeightOfNode":"2"},{"name":"One Main Island","fill":"#E5D75D","WeightOfNode":"2"},{"name":"Archipelago","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"Landlocked Territory","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"Region","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"Territory","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"Two Main Islands","fill":"#E4DD6B","WeightOfNode":"1"}]},{"name":"North America","fill":"#E6853B","WeightOfNode":"44","children":[{"name":"Country","fill":"#D54865","WeightOfNode":"10"},{"name":"One Main Island","fill":"#E78C36","WeightOfNode":"6"},{"name":"Country - One Main Island","fill":"#E9A129","WeightOfNode":"5"},{"name":"Archipelago","fill":"#EAAF29","WeightOfNode":"4"},{"name":"Country - Two Main Islands","fill":"#E9BD34","WeightOfNode":"3"},{"name":"Island Municipality","fill":"#E9BD34","WeightOfNode":"3"},{"name":"Country - Archipelago","fill":"#E7CA45","WeightOfNode":"2"},{"name":"Country - Part of a Larger Island","fill":"#E7CA45","WeightOfNode":"2"},{"name":"Constituent Country - One Island","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"Constituent Country - Part of a Larger Island","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"Country - One Island","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"Island Nation","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"One Island","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"One Major Island","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"Part of a Larger Island","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"Three Islands","fill":"#E4DD6B","WeightOfNode":"1"},{"name":"Uninhabited Atoll","fill":"#E4DD6B","WeightOfNode":"1"}]},{"name":"Australia / Oceania","fill":"#E89330","WeightOfNode":"38","children":[{"name":"Territory","fill":"#D33F6A","WeightOfNode":"11"},{"name":"Country - Archipelago","fill":"#D33F6A","WeightOfNode":"10"},{"name":"Archipelago","fill":"#E1704C","WeightOfNode":"7"},{"name":"One Island","fill":"#E7CA45","WeightOfNode":"2"},{"name":"One Main Island","fill":"#E7CA45","WeightOfNode":"2"},{"name":"Country","fill":"#E5D75D","WeightOfNode":"1"},{"name":"Country - One Island","fill":"#E5D75D","WeightOfNode":"1"},{"name":"Country - Part of a Larger Island","fill":"#E5D75D","WeightOfNode":"1"},{"name":"Country - Two Main Islands","fill":"#E5D75D","WeightOfNode":"1"},{"name":"Island Nation","fill":"#E5D75D","WeightOfNode":"1"},{"name":"Uninhabited Atoll","fill":"#E5D75D","WeightOfNode":"1"}]},{"name":"South America","fill":"#E7CA45","WeightOfNode":"16","children":[{"name":"Country","fill":"#D33F6A","WeightOfNode":"12"},{"name":"One Island","fill":"#E8C33C","WeightOfNode":"1"},{"name":"One Main Island","fill":"#E8C33C","WeightOfNode":"1"},{"name":"Region","fill":"#E8C33C","WeightOfNode":"1"},{"name":"Two Main Islands","fill":"#E8C33C","WeightOfNode":"1"}]},{"name":"Antarctica","fill":"#E3E37C","WeightOfNode":"4","children":[{"name":"Territory","fill":"#D33F6A","WeightOfNode":"2"},{"name":"Archipelago","fill":"#D33F6A","WeightOfNode":"1"},{"name":"Group of Islands","fill":"#D33F6A","WeightOfNode":"1"}]}]},"options":{"hierarchy":["continent","type"],"input":null,"attribute":"Number of Countries","linkLength":null,"fontSize":10,"tooltip":true,"collapsed":true,"zoomable":false,"margin":{"top":20,"bottom":20,"left":70,"right":275}}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-658147d3bdc6fcdda3d8" style="width:100%;height:390px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-658147d3bdc6fcdda3d8">{"x":{"data":{"name":"Geography","children":[{"name":"Europe","children":[{"name":"Southern Europe"},{"name":"Western Europe"},{"name":"Eastern Europe"},{"name":"Northern Europe"}]},{"name":"Asia","children":[{"name":"Southern Asia"},{"name":"Western Asia"},{"name":"South-Eastern Asia"},{"name":"Eastern Asia"},{"name":"Central Asia"}]},{"name":"Africa","children":[{"name":"Northern Africa"},{"name":"Middle Africa"},{"name":"Western Africa"},{"name":"Southern Africa"},{"name":"Eastern Africa"}]},{"name":"Australia / Oceania","children":[{"name":"Oceania-Polynesia"},{"name":"Australia and New Zealand"},{"name":"Oceania-Melanesia"},{"name":"Oceania-Micronesia"}]},{"name":"North America","children":[{"name":"Caribbean"},{"name":"Central America"},{"name":"Northern America"}]},{"name":"South America","children":[{"name":"South America"},{"name":"Caribbean"}]},{"name":"Antarctica"}]},"options":{"hierarchy":["continent","sub_region"],"input":null,"attribute":"leafCount","linkLength":null,"fontSize":10,"tooltip":false,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":70,"right":150},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>Lastly, let’s demonstrate creating a collapsible tree for organizational structures using a sample dataset. Replace the last two code blocks below with the following examples.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="collapsibleTree html-widget html-fill-item" id="htmlwidget-e48c82543e61d1ef39a4" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-e48c82543e61d1ef39a4">{"x":{"data":{"name":"org","children":[{"name":"Ana","children":[{"name":"Bill"},{"name":"Larry"}]},{"name":"Bill","children":[{"name":"Claudette"},{"name":"Danny"},{"name":"Erika"}]},{"name":"Claudette","children":[{"name":"Fred"},{"name":"Grace"}]},{"name":"Danny","children":[{"name":"Henri"}]},{"name":"Fred","children":[{"name":"Ida"},{"name":"Joaquin"}]},{"name":"Grace","children":[{"name":"Kate"}]},{"name":"Larry","children":[{"name":"Mindy"},{"name":"Nicholas"}]},{"name":"Nicholas","children":[{"name":"Odette"},{"name":"Peter"}]}]},"options":{"hierarchy":["Manager","Employee"],"input":null,"attribute":"leafCount","linkLength":null,"fontSize":10,"tooltip":false,"collapsed":false,"zoomable":true,"margin":{"top":20,"bottom":20,"left":40,"right":70},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="collapsibleTree html-widget html-fill-item" id="htmlwidget-e07e150c1a94397eb570" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-e07e150c1a94397eb570">{"x":{"data":{"name":"Ana","WeightOfNode":"President","children":[{"name":"Bill","WeightOfNode":"VP Operations","children":[{"name":"Claudette","WeightOfNode":"Director","children":[{"name":"Fred","WeightOfNode":"Manager","children":[{"name":"Ida","WeightOfNode":"Operator"},{"name":"Joaquin","WeightOfNode":"Operator"}]},{"name":"Grace","WeightOfNode":"Manager","children":[{"name":"Kate","WeightOfNode":"Associate"}]}]},{"name":"Danny","WeightOfNode":"Director","children":[{"name":"Henri","WeightOfNode":"Jr Scientist"}]},{"name":"Erika","WeightOfNode":"Scientist"}]},{"name":"Larry","WeightOfNode":"VP Finance","children":[{"name":"Mindy","WeightOfNode":"Analyst"},{"name":"Nicholas","WeightOfNode":"Director","children":[{"name":"Odette","WeightOfNode":"Accountant"},{"name":"Peter","WeightOfNode":"Accountant"}]}]}]},"options":{"hierarchy":[1,2,3,4,5],"input":null,"attribute":"Title","linkLength":null,"fontSize":10,"tooltip":true,"collapsed":false,"zoomable":true,"margin":{"top":20,"bottom":20,"left":40,"right":60},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="complex-collapsible-trees-example" class="level2">
+<h2 class="anchored" data-anchor-id="complex-collapsible-trees-example">Complex Collapsible Trees Example</h2>
+<p><img src="..\images/CollabTree.png" class="img-fluid" width="646"></p>
+<p>I have generated a complex collaborative tree utilizing my proprietary datasets, which unfortunately cannot be shared publicly. However, I would like to provide you with a snapshot of the expanded tree above.</p>
+<p>If you wish to recreate similar results using your own datasets, follow the steps outlined in the earlier parts of this tutorial. Remember, the process involves importing data into R, cleaning it up, and finally rendering the tree using the `collapsibleTree()` function from the `collapsibleTree` package. Good luck, and feel free to reach out if you encounter any issues during implementation!</p>
+<p>Enjoyed the tutorial? Consider fueling my efforts with a coffee!</p>
+<p><a href="https://www.buymeacoffee.com/zobaer" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a></p>
+<p>References: This tutorial is based on the documentation provided by Adeel Khan on his https://adeelk93.github.io/collapsibleTree/</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2024, Zobaer Ahmed</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

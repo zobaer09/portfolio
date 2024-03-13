@@ -1,0 +1,149 @@
+---
+title: "Learning Collection"
+---
+
+## Getting Started with Collapsible Trees using R: A Simple Tutorial
+
+In this tutorial, we will explore how to generate collapsible trees with the collapsibleTree package in R. Let's begin by installing and loading the required packages if you haven't already. You may need to modify the installation paths based on your system configuration.
+
+```{r}
+#| warning: false
+
+# Install necessary packages (if not installed):
+# install.packages("collapsibleTree")
+# install.packages("readxl")
+# install.packages("dplyr")
+# install.packages("colorspace")
+
+# Load libraries
+library(collapsibleTree)
+library(readxl)
+library(dplyr)
+library(colorspace)
+
+```
+
+Now let's load our dataset containing geographical information. In this example, we use an Excel file named 'Geography Table_Data.World.xlsx' downloaded from (https://data.world/glx/geography-table). Adjust the path accordingly for your local files.
+
+```{r}
+#| warning: false
+#| message: false
+
+# Read data from Excel file
+Geography <- read_xlsx("C:/Users/Zobaer Ahmed/Documents/Zobaer_github_page/portfolio/data/Geography Table_Data.World.xlsx")
+
+# Display summary of loaded data (if needed delete the "#" sign)
+# summary(Geography)
+
+```
+
+Next, we will display a collapsible tree representing the hierarchical structure of continents, types, and countries using the collapsibleTree() function. `Click any node and see the magic`.
+
+```{r}
+#| warning: false
+#| echo: false
+#| message: false
+
+collapsibleTree(
+  Geography,
+  hierarchy = c("continent", "type", "country"),
+  width = 800,
+  zoomable = FALSE
+)
+```
+
+To further customize the tree, we can calculate the number of countries per continent and type, then add these counts as attributes for each node. This allows us to view the count when expanding nodes.
+
+```{r}
+#| warning: false
+#| echo: false
+#| message: false
+
+# Group data by continent and type, calculating the number of countries
+Geography_summarized <- Geography %>%
+  group_by(continent, type) %>%
+  summarize(`Number of Countries` = n()) %>%
+  ungroup()
+
+# Generate collapsible tree summary
+collapsibleTreeSummary(
+  Geography_summarized,
+  hierarchy = c("continent", "type"),
+  root = "Geography",
+  width = 800,
+  attribute = "Number of Countries",
+  zoomable = FALSE
+)
+
+```
+
+```{r}
+#| warning: false
+#| echo: false
+#| message: false
+
+# To show subregions instead of country names while excluding Antarctica due to having no subregions, make the following modifications to the previous code block:
+
+collapsibleTree(
+  Geography,
+  hierarchy = c("continent", "sub_region"),
+  width = 800
+)
+```
+
+Lastly, let's demonstrate creating a collapsible tree for organizational structures using a sample dataset. Replace the last two code blocks below with the following examples.
+
+```{r}
+#| warning: false
+#| echo: false
+#| message: false
+
+# Sample dataset
+org <- data.frame(
+    Manager = c(NA, "Ana", "Ana", "Bill", "Bill", "Bill", "Claudette", "Claudette", "Danny",
+               "Fred", "Fred", "Grace", "Larry", "Larry", "Nicholas", "Nicholas"),
+    Employee = c("Ana", "Bill", "Larry", "Claudette", "Danny", "Erika", "Fred", "Grace",
+               "Henri", "Ida", "Joaquin", "Kate", "Mindy", "Nicholas", "Odette", "Peter"),
+    Title = c("President", "VP Operations", "VP Finance", "Director", "Director", "Scientist",
+             "Manager", "Manager", "Jr Scientist", "Operator", "Operator", "Associate",
+             "Analyst", "Director", "Accountant", "Accountant")
+)
+
+```
+
+```{r}
+#| warning: false
+#| echo: false
+#| message: false
+
+# Create collapsible tree
+collapsibleTree(org, c("Manager", "Employee"), collapsed = FALSE)
+
+```
+
+```{r}
+#| warning: false
+#| echo: false
+#| message: false
+
+# Create collapsible tree network
+collapsibleTreeNetwork(org, attribute = "Title", collapsed = FALSE)
+
+```
+
+## Complex Collapsible Trees Example
+
+![](/images/CollabTree.png){width="646"}
+
+I have generated a complex collaborative tree utilizing my proprietary datasets, which unfortunately cannot be shared publicly. However, I would like to provide you with a snapshot of the expanded tree above.
+
+If you wish to recreate similar results using your own datasets, follow the steps outlined in the earlier parts of this tutorial. Remember, the process involves importing data into R, cleaning it up, and finally rendering the tree using the \`collapsibleTree()\` function from the \`collapsibleTree\` package. Good luck, and feel free to reach out if you encounter any issues during implementation!
+
+Enjoyed the tutorial? Consider fueling my efforts with a coffee!
+
+<a href="https://www.buymeacoffee.com/zobaer" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"/></a>
+
+
+
+
+References: This tutorial is based on the documentation provided by Adeel Khan on his https://adeelk93.github.io/collapsibleTree/

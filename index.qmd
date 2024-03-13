@@ -1,19 +1,99 @@
 ---
-title: "About Me"
-about:
-  id: me
-  template: broadside
-  image: img/profile.png
+title: "Zobaer Ahmed"
+css: styles.css
+image: img/profile.png
+toc: false
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 20em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/zobaer-ahmed/
+    - text: Twitter
+      href: https://twitter.com/ZobaerAhmed8
+    - text: GitHub
+      href: https://github.com/zobaer09
+    - text: Google Scholar
+      href: https://scholar.google.com/citations?user=zvbTZ-AAAAAJ
+    - text: ORCID
+      href: https://orcid.org/0000-0002-5341-363X
+    - text: Email
+      href: mailto:zunnun09@gmail.com
 ---
 
-:::{#me}
+## About Me
 
-## Goals
+::: card
+Embark on a journey through my diverse professional landscape in New York City, where I bring over `10 years of expertise` as a `data analyst`, `international researcher`, and `project manager`. My adaptability and dedication to excellence are evident across my varied roles, shaped by my tenure with renowned global organizations. My holistic problem-solving approach is enriched by my leadership and communication abilities, allowing me to navigate complex challenges effectively. My goal is to make a significant, positive impact with every project I tackle. Join me in my mission to innovate and inspire in the realm of data and analysis.
+
+If you require my services for `freelance projects` or `consultancies`, feel free to get in touch with me.
+:::
 
 ## Education
 
-## Experience
+::: card
+`PhD` in Environmental Dynamics, 2023, University of Arkansas (USA)
 
+`MSc` in Rural Development, 2019, Ghent University (Belgium), Pisa University (Italy) and Humboldt University of Berlin (Germany)
+
+`MSc` in Disaster/Climate Change Management, 2014, University of Dhaka (Bangladesh)
+
+`BSc`, Agriculture, 2012, Bangabandhu Sheikh Mujibur Rahman Agricultural University (Bangladesh)
 :::
 
-Thanks for checking out my web site!
+## Experience
+
+::: card
+**Director Research and Evaluation**
+
+*NYC Mayor's Office to ENDGBV*
+
+07-2023-- Present \| New York City, NY, USA
+
+**Senior Research Assistant**
+
+*CAST, University of Arkansas*
+
+05-2021-- 07-2023 \| Fayetteville, AR, USA
+
+**Graduate Research Assistant**
+
+*Arkansas State University*
+
+01-2020-- 05-2021 \| Jonesboro, AR, USA
+
+**Research, Monitoring, Evaluation and Learning (RMEL) Assistant Manager**
+
+*Friendship NGO*
+
+01-2013-- 08-2017 \| Dhaka, BGD
+
+**Research Country Manager**
+
+*Premise Data*
+
+03-2016-- 09-2017 \| California, CA, USA
+:::
+
+## Tools & Software
+
+I'm skilled in a suite of technical software and tools which fortify my analytical prowess. These include:
+
+::: card
+-   **Data Analysis & Management**: Proficient in R-Studio, Python, SPSS, and Power BI for comprehensive data analysis and visualization.
+
+-   **Geospatial Mapping**: Expert in using ArcGIS Pro, ArcMap, and Google Earth Engine for detailed geospatial modeling and mapping.
+
+-   **Project Planning**: Utilizing Lean Six Sigma, MS Project, Theory of Change, Logical Framework and Monitoring and Evaluation tool kits for efficient project management and planning.
+
+-   **Statistical Computing**: R-Studio, Jupyter Notebook and Spyder are my go-tos for statistical computation and machine learning application.
+
+-   **Version Control**: Managing code versions and collaborations through GitHub ensures workflow integrity.
+
+-   **Literature Management**: Mendeley and Zotero for organizing research references and citations.
+
+-   **Survey Development**: Designing and conducting surveys with tools like Qualtrics, SurveyMonkey, Open Data Kit, and Kobo Toolbox.
+
+-   **AI & Machine Learning**: Exploring the capabilities of Large Language Models (LLMs) to integrate artificial intelligence into data-driven solutions.
+:::

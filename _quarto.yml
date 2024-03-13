@@ -1,27 +1,29 @@
 project:
   type: website
   output-dir: docs
-  
+
 website:
-  title: "Zobaer Ahmed's World of Data: Research, Analysis, and Visual Insights"
+  title: "Research, Analysis, and Visual Portfolio"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - projects.qmd
-    tools:
-      - icon: twitter
-        href: https://twitter.com/
-      - icon: github
-        href: https://github.com/zobaer09/portfolio
+      - text: "Home"
+        href: index.qmd
+      - text: "Tutorials"
+        href: tutorials/
   page-footer:
     right: "Built with [Quarto](https://quarto.org/)"
     left: "&copy; Copyright 2024, Zobaer Ahmed"
 
 format:
   html:
-    theme: cerulean
+    theme:
+      light: flatly
+      dark: darkly
     toc: true
-
+    page-layout: full
+    mainfont: Times New Roman 
+    font-size: 14px
+    
 editor: source
+
 

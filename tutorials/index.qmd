@@ -1,0 +1,17 @@
+---
+title: Tutorials
+---
+
+## Learning Collection
+
+Step into a vast world of knowledge with my collection of tutorials, crafted to cater to a multitude of interests and professional growth goals. Each tutorial is designed as a gateway to mastery in a variety of engaging subjects, offering you the resources to expand your skill set and explore new areas of interest.
+
+
+- [Tutorial 1: Introduction to Collapsible Trees using R](tutorials1.qmd)
+- [Tutorial 2: Analyzing Urban Community Gardens: Borough Distribution with R & Spatial Data Visualization](tutorials2.qmd)
+
+Dive into these resources to build and refine your skill set.
+
+
+<a href="https://www.buymeacoffee.com/zobaer" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
